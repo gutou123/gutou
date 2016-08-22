@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+
+function Num(n)
+{
+    var s = [1];
+    for(var i = 1;i<n;i++)
+	{
+	    var arr1 = [];
+	    var arr2 = [];
+	    if(n==1)
+		{
+		    return s;
+		}
+	    arr1=[0].concat(s);
+		arr2=s.concat([0]);
+		s=[];
+        for(var j = 0;j<arr1.length;j++)
+		{
+		    s.push(arr1[j]+arr2[j])
+		}
+	}    	
+	return s;
+}
+Num(7)
+
+
+ 
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
